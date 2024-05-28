@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Actsl+2Kd/kqOhPesDShGEYyFjXKISmy7kOeiteKHVI=",
+  "Hash": "+Hm+Hb/wOlijjkOSUV/nQl+1hpC/4UdCkfpUWZxYyp4=",
   "Source": "WowLanches",
   "BasePath": "_content/WowLanches",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\carousel13.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\lucia\\Desktop\\WowLanches\\wwwroot\\images\\lan-1.jpg",
+      "SourceId": "WowLanches",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lucia\\Desktop\\WowLanches\\wwwroot\\",
+      "BasePath": "_content/WowLanches",
+      "RelativePath": "images/lan-1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\lan-1.jpg"
     },
     {
       "Identity": "C:\\Users\\lucia\\Desktop\\WowLanches\\wwwroot\\js\\site.js",
