@@ -15,7 +15,14 @@ namespace WowLanches.Repositories
         }
 
         public IEnumerable<Lanche> Lanches => _context.Lanches.Include(c => c.Categoria);
-        public IEnumerable<Lanche> LanchesPreferidos => _context.Lanches.Where(p => p.IsLanchePreferido).Include(c => c.Categoria);
-        public Lanche GetLancheById (int lancheId) => _context.Lanches.FirstOrDefault(l => l.LancheId == lancheId);
+        public IEnumerable<Lanche> LanchesPreferidos => _context.Lanches. //obtendo lanches
+                                                        Where(p => p.IsLanchePreferido). //filtrando Lanche Preferido
+                                                        Include(c => c.Categoria); //obtendo a Categoria
+        public Lanche GetLancheById (int lancheId) 
+        {
+            return _context.Lanches.FirstOrDefault(l => l.LancheId == lancheId);
+        }
+        
+         
     }
 }
