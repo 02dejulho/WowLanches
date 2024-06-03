@@ -1,5 +1,7 @@
 ﻿using WowLanches.Context;
 using Microsoft.EntityFrameworkCore;
+using WowLanches.Repositories.Interfaces;
+using WowLanches.Repositories;
 
 namespace WowLanches;
 public class Startup
@@ -16,6 +18,9 @@ public class Startup
     {
         services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddTransient<ILancheRepository, LancheRepository>();
+            services.AddTransient<ICategoriaRepository, CategoriaRepository>();
         
         services.AddControllersWithViews();
     }
