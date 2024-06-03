@@ -1,14 +1,24 @@
-@model IEnumerable<WowLanches.Models.Lanche>
+@model IEnumerable<WowLanches.Models.Lanche> //@model define o tipo = coleção de lanches
+
 
 <div>
     <h2>Todos os Lanches</h2>
 </div>
 
-@foreach(var lanche in Model)
-{
-    <div>
-        <h4>@lanche.Nome</h4>
-        <p><img src="@lanche.ImagemUrl"></p>
-        <h3>Preço : @lanche.Preco.ToString("c")</h3>
+<div class="container">
+    <div class="row">
+
+        @foreach(var lanche in Model) //foreach percorrerá toda a coleção de lanches e os exibirá na lista
+        {
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <div>
+                    <p><img src="@lanche.ImagemUrl" class="img-flluid"></p>                               
+                    <h4>@lanche.Nome</h4>
+                    <h5>Preço : @lanche.Preco.ToString("c")</h5> 
+                    <p>@lanche.DescricaoCurta</p>
+                </div>
+            </div>
+        }
+
     </div>
-}
+</div>
