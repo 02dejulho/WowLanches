@@ -5,7 +5,7 @@ using WowLanches.Repositories.Interfaces;
 
 namespace WowLanches.Repositories
 {
-    public class LancheRepository : ILanchesRepository
+    public class LancheRepository : ILancheRepository
     {
         private readonly AppDbContext _context;
 
